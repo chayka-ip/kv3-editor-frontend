@@ -1,0 +1,94 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+div#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  user-select: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* constants */
+:root {
+  --toolbar-height: 50px;
+  --property-table-width: 500px;
+}
+
+.toolbar {
+  width: 100%;
+  height: var(--toolbar-height);
+  background-color: gainsboro;
+  border-bottom: 2px;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 94%;
+  background: #fff;
+}
+
+.btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+}
+
+.btn-toolbar {
+  background-color: antiquewhite;
+  border-radius: 15px;
+}
+
+.toolbar-buttons-container {
+  height: auto;
+  display: inline-block;
+}
+
+.toolbar-file-name-input-container {
+  width: 200px;
+  margin-left: 50px;
+  height: auto;
+  display: inline-block;
+}
+
+.toolbar-file-name-input {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.raw-data-content {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  user-select: text;
+}

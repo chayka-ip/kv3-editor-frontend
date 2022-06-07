@@ -1,0 +1,45 @@
+/* constants */
+:root {
+  --split-drag-width: 15px;
+  --split-drag-offset-left: -4px;
+}
+
+.split-container {
+  width: 100%;
+  height: 100%;
+}
+.split-left-panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  /* right: 100px; */
+  background: grey;
+  box-sizing: border-box;
+}
+
+.split-right-panel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 450px;
+  color: #fff;
+  background: black;
+}
+
+.split-right-panel-content {
+  width: calc(100% - var(--split-drag-width) - var(--split-drag-offset-left));
+  margin-left: calc(var(--split-drag-width) + var(--split-drag-offset-left));
+  height: 100%;
+}
+
+.split-drag {
+  position: absolute;
+  left: var(--split-drag-offset-left);
+  top: 0;
+  bottom: 0;
+  width: var(--split-drag-width);
+  cursor: w-resize;
+  background-color: darkgray;
+}

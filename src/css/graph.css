@@ -1,0 +1,117 @@
+/* constants */
+:root {
+  --node-connection-point-height: 20px;
+  --node-connection-point-width: 20px;
+  --node-footer-height: 13px;
+}
+
+.graph-container {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: auto;
+}
+
+.graph {
+  width: 5000px;
+  height: 5000px;
+  /* position: relative; */
+  display: block;
+  transform: scale(0.8) translate(-17%, -14%);
+}
+
+.draggable-node {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  width: 180px;
+  height: 80px;
+  float: left;
+  position: absolute;
+}
+
+.react-draggable strong {
+  background: #ddd;
+  border: 1px solid #999;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  text-align: center;
+}
+
+.draggable-node-content {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.draggable-node-title-section {
+  width: calc(100% - (2 * var(--node-connection-point-width)));
+  max-height: var(--node-connection-point-height);
+  font-size: 15px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.draggable-node-connections-row {
+  width: 100%;
+  height: var(--node-connecton-row-heigth);
+  display: inline-block;
+}
+
+.draggable-node-comment-section {
+  width: 100%;
+  height: calc(100% - var(--node-connection-point-height) - var(--node-footer-height));
+  font-size: 16px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.draggable-node-footer {
+  width: 100%;
+  height: var(--node-footer-height);
+}
+
+.node-connection-point {
+  background-color: black;
+  width: var(--node-connection-point-width);
+  height: var(--node-connection-point-height);
+  border-radius: 5px;
+  display: inline-block;
+  cursor: auto;
+}
+
+.connection-in {
+  background-color: aquamarine;
+  float: left;
+}
+
+.connection-out {
+  background-color: blue;
+  float: right;
+}
+
+.react-draggable,
+.cursor {
+  cursor: move;
+}
+
+.box {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  width: 180px;
+  height: 180px;
+  float: left;
+}
+
+.node-sel-1 {
+  background-color: rgba(214, 214, 216, 0.603);
+}
+
+.node-sel-2 {
+  background-color: azure;
+}

@@ -1,0 +1,180 @@
+/* constants */
+:root {
+  --max-row-height: 15px;
+  --prop-data-type-width: 17%;
+  --prop-name-width: 28%;
+  --prop-value-width: 45%;
+  --prop-remove-btn-width: 10%;
+  --table-nested-rows-width: 98%;
+
+  --talbe-comment-contaner-height: 10%;
+
+  --property-text-font-size: 13px;
+}
+
+.property-table-container {
+  width: 100%;
+  height: 100%;
+  background: rgb(225, 251, 227);
+}
+
+.table-node-comment-box-container {
+  width: 100%;
+  height: var(--talbe-comment-contaner-height);
+  background-color: white;
+}
+
+.table-node-comment-box {
+  width: 100%;
+  height: 100%;
+}
+
+.table-node-comment-box-textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  font-size: 20px;
+}
+
+.property-table {
+  overflow: auto;
+  width: 100%;
+  height: calc(95% - var(--talbe-comment-contaner-height));
+}
+
+.property-row {
+  width: 100%;
+  min-height: var(--max-row-height);
+  padding-top: 10px;
+}
+
+.property-row-content {
+  width: 100%;
+  height: 100%;
+}
+
+.property-row-content-base {
+  background-color: rgba(0, 255, 255, 0.486);
+  width: 100%;
+  /* max-height: 100%; */
+  border-radius: 20px;
+  display: inline-flex;
+  flex-flow: row;
+}
+
+.property-column {
+  height: 100%;
+}
+
+.property-data-type {
+  width: var(--prop-data-type-width);
+  height: 100%;
+  background-color: brown;
+}
+
+.property-name {
+  position: auto;
+}
+
+.data-type-select {
+  width: 100%;
+  height: 100%;
+  font-size: var(--property-text-font-size);
+}
+
+.autocomplete-input {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  height: var(--max-row-height);
+  font-size: var(--property-text-font-size);
+}
+
+.property-name-container {
+  width: var(--prop-name-width);
+  height: var(--max-row-height);
+  background-color: bisque;
+}
+
+.property-value-container {
+  width: var(--prop-value-width);
+  height: var(--max-row-height);
+  background-color: green;
+}
+
+.property-value {
+  position: auto;
+}
+
+.property-table-add-row {
+  width: 100%;
+  height: 100%;
+}
+
+.property-table-remove-row-btn-container {
+  width: var(--prop-remove-btn-width);
+  height: 100%;
+}
+
+.property-table-remove-row-btn {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.property-table-add-row-btn {
+  position: relative;
+  width: 60%;
+  height: 10%;
+  left: 20%;
+  background-color: green;
+}
+
+.property-table-add-row-btn-text {
+  font-size: 20px;
+}
+
+.property-table-content-nested-top {
+  width: 100%;
+  height: 10px;
+  background-color: gray;
+  display: block;
+}
+
+.property-table-content-nested-down {
+  width: 100%;
+  height: 10px;
+  background-color: gray;
+  display: block;
+}
+
+.property-table-content-nested-rows {
+  width: var(--table-nested-rows-width);
+  height: 100%;
+  display: inline-block;
+}
+
+.property-table-content-nested {
+  height: 100%;
+  background-color: yellow;
+}
+
+.display-none {
+  display: none;
+}
+
+.property-table-content-nested-offset {
+  width: calc(100% - var(--table-nested-rows-width));
+  height: 100%;
+  background-color: gray;
+  display: inline-block;
+}
+
+.property-table-nested-rows-show-hide {
+  background-color: cornflowerblue;
+  height: var(--max-row-height);
+}
+
+.property-table-nested-rows-show-hide::after {
+  content: "";
+}

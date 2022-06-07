@@ -1,0 +1,8 @@
+{
+    "object": "object",
+    "array": "array",
+    "number": "number",
+    "bool": "bool",
+    "str": "str",
+    "comment": "comment"
+}

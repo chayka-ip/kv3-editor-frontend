@@ -1,0 +1,69 @@
+{
+  "header": "<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->",
+  "root": {
+    "name": "root",
+    "data_type": "object",
+    "value": [
+      {
+        "name": "type",
+        "value": "condition_is_empty",
+        "comments": [
+          "Test Comment",
+          "Test\n     multi\n     Line"
+        ]
+      },
+      {
+        "name": "child",
+        "data_type": "object",
+        "value": [
+          {
+            "name": "type",
+            "value": "decorator_run_once"
+          },
+          {
+            "name": "child",
+            "data_type": "object",
+            "value": [
+              {
+                "name": "type",
+                "value": "sequencer"
+              },
+              {
+                "name": "children",
+                "data_type": "array",
+                "value": [
+                  {
+                    "data_type": "object",
+                    "value": [
+                      {
+                        "name": "type",
+                        "value": "action_move_to"
+                      },
+                      {
+                        "name": "destination",
+                        "value": "1220.38 -1115.36 -211.10"
+                      }
+                    ]
+                  },
+                  {
+                    "data_type": "object",
+                    "value": [
+                      {
+                        "name": "type",
+                        "value": "decorator_dec_global_counter"
+                      },
+                      {
+                        "name": "input_name",
+                        "value": "'PositioningForTopSmoke'"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

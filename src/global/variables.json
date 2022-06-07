@@ -1,0 +1,12 @@
+{
+    "file_header_key": "header",
+    "graph_root_key": "graph_root",
+    "graph_root_id": -1,
+    "display_id_as_title":false,
+    "use_compact_layout": true,
+
+    "bool_true": "true",
+    "bool_false": "false",
+    
+    "default_header": "<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->"
+}
